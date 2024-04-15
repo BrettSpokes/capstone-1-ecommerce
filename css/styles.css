@@ -2,6 +2,11 @@
     font-family: 'Lugrasimo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
 }
 
+body{
+    background-color: antiquewhite;
+    background-image: url("/images/background.webp");
+}
+
 .logo-width-max {
     max-width: 8%;
     padding: 0%;
@@ -34,3 +39,4 @@
 #visit-us-container {
     font-size: small;
 }
+

@@ -9,11 +9,28 @@
     border: 0%;
 }
 
-.carousel-container {
-    margin-left: 5% !important;
-    margin-right: 5% !;
-}
-
 .text-shadow-black {
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: smaller;
+}
+
+#carousel-container {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#preamble-container {
+    margin-top: 5%;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: bolder;
+}
+
+#visit-us-container {
+    font-size: small;
 }

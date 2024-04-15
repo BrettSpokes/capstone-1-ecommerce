@@ -60,9 +60,12 @@
     <form class="row g-3 needs-validation" novalidate>
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Enter First Name">
+        <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Enter First Name" required>
         <div class="valid-feedback">
           Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter your first name.
         </div>
       </div>
       <div class="col-md-4">
@@ -71,6 +74,9 @@
         <div class="valid-feedback">
           Looks good!
         </div>
+        <div class="invalid-feedback">
+          Please enter your last name.
+        </div>
       </div>
       <div class="col-md-4">
         <label for="validationCustomUsername" class="form-label">Username</label>
@@ -78,6 +84,9 @@
           <input type="text" class="form-control" id="validationCustomUsername" placeholder="Set Username" aria-describedby="inputGroupPrepend" required>
           <div class="invalid-feedback">
             Please choose a username.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
           </div>
         </div>
       </div>
@@ -88,6 +97,9 @@
           <div class="invalid-feedback">
             Please set a password.
           </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
       </div>
       <div class="col-md-6">
@@ -95,6 +107,9 @@
         <input type="text" class="form-control" id="validationCustom03" placeholder="Enter City" required>
         <div class="invalid-feedback">
           Please provide a valid city.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
         </div>
       </div>
       <div class="col-md-3">
@@ -104,7 +119,10 @@
           <option>...</option>
         </select>
         <div class="invalid-feedback">
-          Please select a valid state.
+          Please select a state.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
         </div>
       </div>
       <div class="col-md-3">
@@ -112,6 +130,9 @@
         <input type="text" class="form-control" id="validationCustom05" required>
         <div class="invalid-feedback">
           Please provide a valid zip.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
         </div>
       </div>
       <div class="col-12">
@@ -126,11 +147,13 @@
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" type="submit">Register</button>
       </div>
     </form>
 
   </main>
+
+  <div>Already have an account? <a href="login.html">Click here</a> to login.</div>
 
   <footer>
     <h6 class="footer-text">Disclaimer: The Guild is not responsible for accidental polymorphs, cursed treasure, or

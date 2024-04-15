@@ -1,5 +1,6 @@
 * {
     font-family: 'Lugrasimo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    max-width: 100%;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 
 .footer-text {
     text-align: center;
-    font-size: smaller;
+    font-size: 10pt;
 }
 
 #carousel-container {

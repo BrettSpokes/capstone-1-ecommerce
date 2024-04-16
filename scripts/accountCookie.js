@@ -78,7 +78,7 @@ function WriteCookie() {
 }
 
 function redirectHome() {
-    window.location.href = "index.html";
+    window.location.replace("index.html");
 }
 
 

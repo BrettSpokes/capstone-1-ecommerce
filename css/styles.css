@@ -24,6 +24,19 @@ body{
     font-size: 10pt;
 }
 
+.clear-cart-button {
+    font-size: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: brown;
+    border: red;
+}
+
+.add-cart-button {
+    background-color: brown;
+    border: red;
+}
+
 #carousel-container {
     margin-left: 0%;
     margin-right: 0%;

@@ -67,7 +67,7 @@
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">First name</label>
         <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Enter First Name"
-          required>
+          pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -88,8 +88,8 @@
       <div class="col-md-4">
         <label for="validationCustomUsername" class="form-label">Username</label>
         <div class="input-group has-validation">
-          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Set Username"
-            aria-describedby="inputGroupPrepend" required>
+          <input type="text" class="form-control rounded" id="validationCustomUsername" placeholder="Set Username"
+            aria-describedby="inputGroupPrepend" pattern="^[a-zA-Z0-9]+$" required>
           <div class="invalid-feedback">
             Please choose a username.
           </div>
@@ -101,7 +101,7 @@
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Password</label>
         <div class="input-group has-validation">
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Set Password"
+          <input type="password" class="form-control rounded" id="inputPassword4" placeholder="Set Password"
             aria-describedby="inputGroupPrepend" required>
           <div class="invalid-feedback">
             Please set a password.
@@ -159,6 +159,7 @@
         <button class="btn btn-primary" type="submit">Register</button>
       </div>
       <div>Already have an account? <a href="login.html">Click here</a> to login.</div>
+      <div class="m-4"></div>
     </form>
 
     </section>

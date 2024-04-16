@@ -1,6 +1,20 @@
 'use strict'
 var isMobile = false;
 
+const forms = document.querySelectorAll('.needs-validation');
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+    }, false)
+})
+
 window.onload = function () {
     let allcookies = document.cookie;
     console.log('allcookies:' + allcookies);
@@ -17,10 +31,10 @@ window.onload = function () {
         x.style.display = "none";
         y.style.display = "block";
 
-        y.textContent="Welcome back, " + namecookie;
+        y.textContent = "Welcome back, " + namecookie;
     }
 
-    if (document.getElementById("checkout") != null){
+    if (document.getElementById("checkout") != null) {
         let namecookie = getCookie("name");
         let x = document.getElementById("username");
 
@@ -30,13 +44,13 @@ window.onload = function () {
 };
 
 function WriteCookie() {
+
+
     if (document.loginform.username.value == "") {
-        alert("Please enter value");
         return;
     }
 
     if (document.loginform.password.value == "") {
-        alert("Please enter value");
         return;
     }
 
@@ -44,9 +58,26 @@ function WriteCookie() {
 
     document.cookie = "name=" + cookievalue;
 
-    document.write("Setting Cookies : "
-        + "name=" + cookievalue);
+    //document.write("Setting Cookies : "
+    //   + "name=" + cookievalue);
 
+    let username = document.getElementById("validationCustomUsername").value;
+    let password = document.getElementById("inputPassword4").value;
+    
+
+    console.log('U: ' + username + " P: " + password);
+    console.log('Pass:' + /^[A-Za-z0-9]{2,}$/.test(username) + ' Pass: ' +  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password));
+
+    if (/^[A-Za-z0-9]{2,}$/.test(username) && /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+        redirectHome();
+    }
+    else{
+        alert('Incorrect Login');
+    }
+
+}
+
+function redirectHome() {
     window.location.href = "index.html";
 }
 

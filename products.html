@@ -64,7 +64,9 @@
   <main>
     
     <h1 class="text-center text m-3">Magical Miscellany</h1>
-    <div class="row justify-content-center">
+    
+    <!-- Desktop View -->
+    <div id="desktopGrid" class="row justify-content-center">
       <div class="col-3 pb-4 m-2">
         <div class="card h-100 text-center ">
           <div class="card-body ">
@@ -125,10 +127,78 @@
           </div>
         </div>
       </div>
+      <div class="m-5"></div>
     </div>
+
+    <!-- Mobile View -->
+    <div id="mobileGrid" class="row justify-content-center" style="display: none">
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center ">
+          <div class="card-body ">
+            <h5 class="card-title ">Skull of Prophesy</h5>
+            <img src="images/product-imgs/Skull of Prophecy.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 1,735 gold </div>
+            <button type="button" class="btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center ">
+          <div class="card-body">
+            <h5 class="card-title">Crystalline Orb</h5>
+            <img src="images/product-imgs/Crystalline Orb.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 20 gold </div>
+            <button type="button" class="btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Moonlight Sonata</h5>
+            <img src="images/product-imgs/The Moonlight Sonata.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 315 gold </div>
+            <button type="button" class=" btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Waxwhile Amulet</h5>
+            <img src="images/product-imgs/Waxwhile Amulet.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 3 gold </div>
+            <button type="button" class=" btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">The Sapphire Flyer</h5>
+            <img src="images/product-imgs/Sapphire Flyer.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 250 gold </div>
+            <button type="button" class=" btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 m-5">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Barrel of Staffs</h5>
+            <img src="images/product-imgs/Barrel of Staffs.webp" alt="" sizes="" class="card-img-top rounded">
+            <div class="m-1"> 53 gold </div>
+            <button type="button" class=" btn btn-primary"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
 
-  <footer class="footer mt-auto py-3 bg-body-tertiary">
+  <footer class="footer mt-auto py-3 bg-body-tertiary ">
     <div class="container">
       <h6 class="footer-text">Disclaimer: The Guild is not responsible for accidental polymorphs, cursed treasure, or unexpected encounters with ancient liches. All adventurers peruse at their own risk.</h5>    </div>
   </footer>
@@ -136,6 +206,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="scripts/productsviewmod.js"></script>
 </body>
 
 </html>

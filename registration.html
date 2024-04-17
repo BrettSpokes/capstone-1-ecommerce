@@ -91,7 +91,7 @@
           <input type="text" class="form-control rounded" id="validationCustomUsername" placeholder="Set Username"
             aria-describedby="inputGroupPrepend" pattern="^[a-zA-Z0-9]+$" required>
           <div class="invalid-feedback">
-            Please choose a username.
+            Please choose a username. Using letters and digits, no special characters.
           </div>
           <div class="valid-feedback">
             Looks good!
@@ -102,9 +102,9 @@
         <label for="inputPassword4" class="form-label">Password</label>
         <div class="input-group has-validation">
           <input type="password" class="form-control rounded" id="inputPassword4" placeholder="Set Password"
-            aria-describedby="inputGroupPrepend" required>
+            aria-describedby="inputGroupPrepend" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
           <div class="invalid-feedback">
-            Please set a password.
+            Please set a password. Minimum eight characters, at least one letter and one number.
           </div>
           <div class="valid-feedback">
             Looks good!
@@ -121,24 +121,30 @@
           Looks good!
         </div>
       </div>
-      <div class="col-md-3">
-        <label for="validationCustom04" class="form-label">State</label>
+      <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">Country</label>
         <select class="form-select" id="validationCustom04" required>
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          <option value="Amn">Amn</option>
+          <option value="Anuroch">Anuroch</option>
+          <option value="Baldur's Gate">Baldur's Gate</option>
+          <option value="Calimshan">Calimshan</option>
+          <option value="Cormyr">Cormyr</option>
+          <option value="Elturel">Elturel</option>
+          <option value="Evermeet">Evermeet</option>
+          <option value="Luskan">Luskan</option>
+          <option value="Menzoberranzan">Menzoberranzan</option>
+          <option value="Netheril">Netheril</option>
+          <option value="Neverwinter">Neverwinter</option>
+          <option value="Rashemen">Rashemen</option>
+          <option value="Sigil">Sigil</option>
+          <option value="Silverymoon">Silverymoon</option>
+          <option value="Thay">Thay</option>
+          <option value="Waterdeep">Waterdeep</option>
+          <option value="Zakhara">Zakhara</option>
         </select>
         <div class="invalid-feedback">
           Please select a state.
-        </div>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          Please provide a valid zip.
         </div>
         <div class="valid-feedback">
           Looks good!
@@ -179,6 +185,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="scripts/registration.js"></script>
+  <script src="scripts/accountcookie.js"></script>
 </body>
 
 </html>

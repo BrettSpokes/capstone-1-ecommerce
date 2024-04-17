@@ -8,6 +8,17 @@ body{
     background-image: url("/images/background.webp");
 }
 
+.red-bg{
+    background-color: antiquewhite;
+    background-image: url("/images/background-red.webp");
+}
+
+.off-white-bg{
+    background-color: antiquewhite;
+    background-image: url("/images/background-red.webp");
+    filter: brightness(70%);
+}
+
 .logo-width-max {
     max-width: 8%;
     padding: 0%;
@@ -17,6 +28,47 @@ body{
 
 .text-shadow-black {
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.text-color-white{
+    color: rgb(250, 235, 215);
+}
+
+.text-color-white-body{
+    color: rgb(250, 235, 215);
+}
+
+.text-color-white:hover{
+    color: rgb(250, 246, 240);
+}
+
+.text-color-gray{
+    color: rgb(194, 185, 176);
+}
+
+.text-color-gray:hover{
+    color: rgb(250, 235, 215);
+}
+
+.text-color-gray:active{
+    color: rgb(194,185,176);
+}
+
+.text-color-gray:focus{
+    color: rgb(194,185,176) !important;
+}
+
+
+.no-text-decoration{
+    text-decoration: none;
+}
+
+.transparent-background{
+    background-color: transparent;
+}
+
+.transparent-background:hover{
+    background-color: transparent;
 }
 
 .footer-text {
@@ -32,8 +84,18 @@ body{
     border: red;
 }
 
+.clear-cart-button:hover {
+    background-color: darkred;
+    border: red;
+}
+
 .add-cart-button {
     background-color: brown;
+    border: red;
+}
+
+.add-cart-button:hover {
+    background-color: darkred;
     border: red;
 }
 

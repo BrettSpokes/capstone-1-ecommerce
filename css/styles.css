@@ -8,12 +8,26 @@ body{
     background-image: url("/images/background.webp");
 }
 
+.scroll-container {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+section {
+	scroll-snap-align: center;
+}
+
+::-webkit-scrollbar { 
+	display:none; /* Hides scrollbar */
+}
+
 .red-bg{
     background-color: antiquewhite;
     background-image: url("/images/background-red.webp");
 }
 
-.off-white-bg{
+.off-red-bg{
     background-color: antiquewhite;
     background-image: url("/images/background-red.webp");
     filter: brightness(70%);

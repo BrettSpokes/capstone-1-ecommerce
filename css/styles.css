@@ -33,6 +33,44 @@ section {
     filter: brightness(70%);
 }
 
+.off-white-bg{
+    background-color: antiquewhite;
+    background-image: url("/images/background.webp") ;
+    border-color: #000;
+    filter: saturate(.5);
+    filter: brightness(.9);
+}
+
+.off-white-bg:checked{
+    background-image: url("/images/background-red.webp");
+    filter: brightness(.5);
+    filter: saturate(.5);
+    border-color: black;
+}
+
+.dropdown-noback{
+    background-color: transparent;
+    border-color: #000;
+}
+
+.dropdown-back{
+    background-image: url("/images/background.webp") ;
+    filter: saturate(.5);
+    filter: brightness(.9);
+}
+
+.select-arrow {
+    color: red;
+  }
+
+select option {
+    background-color: antiquewhite; 
+    background-image: url("/images/background.webp") ;
+    border-color: #000;
+    filter: saturate(.5);
+    filter: brightness(.9);
+}
+
 .logo-width-max {
     max-width: 8%;
     padding: 0%;

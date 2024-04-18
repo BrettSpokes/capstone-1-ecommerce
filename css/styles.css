@@ -8,13 +8,14 @@ body{
     background-image: url("/images/background.webp");
 }
 
+
 .a2 {
     text-decoration: none;
     color: brown;
 }
 
 .a2:visited {
-    color: rgb(100, 33, 117);
+    color: rgb(92, 33, 107);
 }
 
 .scroll-container {

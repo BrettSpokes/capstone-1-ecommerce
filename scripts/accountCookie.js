@@ -27,11 +27,22 @@ window.onload = function () {
         //console.log('extracted value ' + namecookie);
         let x = document.getElementById("login");
         let y = document.getElementById("welcomeback");
+        let z = document.getElementById("entermessage")
 
         x.style.display = "none";
         y.style.display = "block";
 
+        if(isMobile){
+            z.style.display = "none";
+        }
+
         y.textContent = "Welcome back, " + namecookie;
+        z.textContent = "The world of magic has await your return"
+
+        if(isMobile){
+
+        }
+
     }
 
     if (document.getElementById("checkout") != null) {
@@ -44,7 +55,7 @@ window.onload = function () {
 };
 
 function WriteCookie() {
-
+    
 
     if (document.loginform.username.value == "") {
         return;
@@ -54,10 +65,9 @@ function WriteCookie() {
         return;
     }
 
-    let cookievalue = document.loginform.username.value + ";";
+    var cookievalue = document.loginform.username.value + ";";
 
-    document.cookie = "name=" + cookievalue;
-
+    
     //document.write("Setting Cookies : "
     //   + "name=" + cookievalue);
 
@@ -69,6 +79,7 @@ function WriteCookie() {
     console.log('Pass:' + /^[A-Za-z0-9]{2,}$/.test(username) + ' Pass: ' +  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password));
 
     if (/^[A-Za-z0-9]{2,}$/.test(username) && /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+        document.cookie = "name=" + cookievalue;
         redirectHome();
     }
     else{

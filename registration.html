@@ -71,12 +71,12 @@
     <!-- Main Body Content Begins -->
     <h1 class="text-center text m-3">Registration</h1>
 
-    <section class="p-5 d-flex justify-content-between">
+    <div class="p-5 d-flex justify-content-between">
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label ">First name</label>
           <input type="text" class="form-control off-white-bg" id="validationCustom01" value="" placeholder="Enter First Name"
-            pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required>
+            pattern="^[A-Za-z0-9]{1,}$" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -99,7 +99,7 @@
           <label for="validationCustomUsername" class="form-label">Username</label>
           <div class="input-group has-validation">
             <input type="text" class="form-control rounded off-white-bg" id="validationCustomUsername" placeholder="Set Username"
-              aria-describedby="inputGroupPrepend" pattern="^[a-zA-Z0-9]+$" required>
+               pattern="^[a-zA-Z0-9]+$" required>
             <div class="invalid-feedback">
               Please choose a username. Using letters and digits, no special characters.
             </div>
@@ -112,7 +112,7 @@
           <label for="inputPassword4" class="form-label">Password</label>
           <div class="input-group has-validation">
             <input type="password" class="form-control rounded off-white-bg" id="inputPassword4" placeholder="Set Password"
-              aria-describedby="inputGroupPrepend" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
             <div class="invalid-feedback">
               Please set a password. Minimum eight characters, at least one letter and one number.
             </div>
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="col-md-6 ">
-          <label for="validationCustom04 " class="form-label ">Country</label>
+          <label for="validationCustom04" class="form-label">Country</label>
           <div class="dropdown-back">
           <select class="form-select dropdown-noback" id="validationCustom04" required>
             <option selected disabled value="">Choose...</option>
@@ -180,7 +180,7 @@
         <div class="m-4"></div>
       </form>
 
-    </section>
+    </div>
     <!-- Main Body Content Ends -->
   </main>
 
@@ -191,7 +191,7 @@
     class="footer mt-auto py-3 bg-body-tertiary fixed-bottom red-bg text-color-white-body border-dark border border-1 text-shadow-black">
     <div class="container">
       <h6 class="footer-text text">Disclaimer: The Guild is not responsible for accidental polymorphs, cursed treasure,
-        or unexpected encounters with ancient liches. All adventurers peruse at their own risk.</h5>
+        or unexpected encounters with ancient liches. All adventurers peruse at their own risk.</h6>
     </div>
   </footer>
   <!-- Footer End -->

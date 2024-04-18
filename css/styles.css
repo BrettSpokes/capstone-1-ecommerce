@@ -8,6 +8,10 @@ body{
     background-image: url("/images/background.webp");
 }
 
+.h1-like {
+    font-size: 2em; 
+    margin: .67em 0;
+}
 
 .a2 {
     text-decoration: none;

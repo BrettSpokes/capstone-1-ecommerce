@@ -9,4 +9,7 @@
  Services
  Registration
 
-![Alt text](images\carousel-imgs\carousel-item-1.png?raw=true "Title")
+# Home
+<p>
+    <img src="images\carousel-imgs\carousel-item-1.png" alt="Home Page" width="738">
+<p>

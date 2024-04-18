@@ -32,6 +32,7 @@ section {
 	display:none; /* Hides scrollbar */
 }
 
+/* Input Background Section */
 .red-bg{
     background-color: antiquewhite;
     background-image: url("/images/background-red.webp");
@@ -87,6 +88,8 @@ select option {
     filter: brightness(.9);
 }
 
+/* ------------------------- */
+
 .logo-width-max {
     max-width: 8%;
     padding: 0%;
@@ -94,6 +97,7 @@ select option {
     border: 0%;
 }
 
+/* Text Color Section */
 .text-shadow-black {
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
@@ -141,10 +145,11 @@ select option {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-
 .no-text-decoration{
     text-decoration: none;
 }
+
+/* ---------------------- */
 
 .transparent-background{
     background-color: transparent;
@@ -158,6 +163,8 @@ select option {
     text-align: center;
     font-size: 10pt;
 }
+
+/* Button Section */
 
 .clear-cart-button {
     font-size: 2em;
@@ -193,6 +200,7 @@ select option {
     background-color: darkred;
 }
 
+/* ---------------------- */
 
 #carousel-container {
     margin-left: 0%;

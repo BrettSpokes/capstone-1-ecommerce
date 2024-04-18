@@ -93,7 +93,7 @@
           <label for="inputPassword4" class="form-label">Password</label>
           <div class="input-group has-validation ">
             <input type="password" name="password" class="form-control rounded off-white-bg" id="inputPassword4" placeholder="Enter Password"
-               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" autocomplete="current-password" required>
             <!-- Minimum eight characters, at least one letter and one number -->
             <div class="invalid-feedback">
               Please enter your password.
@@ -106,7 +106,7 @@
         <div class="col-12">
           <div class="form-check ">
             <input name="check-input" id="remember-check" class="form-check-input off-white-bg" type="checkbox" value="">
-            <label class="form-check-label" name="remember-me" for="remember-check">
+            <label class="form-check-label" id="remember-me" for="remember-check">
               Remember Me
             </label>
           </div>

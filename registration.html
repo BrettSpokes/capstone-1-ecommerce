@@ -99,7 +99,7 @@
           <label for="validationCustomUsername" class="form-label">Username</label>
           <div class="input-group has-validation">
             <input type="text" class="form-control rounded off-white-bg" id="validationCustomUsername" placeholder="Set Username"
-               pattern="^[a-zA-Z0-9]+$" required>
+               pattern="^[a-zA-Z0-9]+$" autocomplete="username" required>
             <div class="invalid-feedback">
               Please choose a username. Using letters and digits, no special characters.
             </div>
@@ -112,7 +112,7 @@
           <label for="inputPassword4" class="form-label">Password</label>
           <div class="input-group has-validation">
             <input type="password" class="form-control rounded off-white-bg" id="inputPassword4" placeholder="Set Password"
-               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" autocomplete="current-password" required>
             <div class="invalid-feedback">
               Please set a password. Minimum eight characters, at least one letter and one number.
             </div>

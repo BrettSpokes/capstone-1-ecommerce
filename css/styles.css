@@ -8,6 +8,15 @@ body{
     background-image: url("/images/background.webp");
 }
 
+.a2 {
+    text-decoration: none;
+    color: brown;
+}
+
+.a2:visited {
+    color: rgb(100, 33, 117);
+}
+
 .scroll-container {
 	height: 100vh;
 	overflow-y: scroll;

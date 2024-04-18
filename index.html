@@ -16,152 +16,202 @@
 </head>
 
 <body>
-    <header>
-        <!-- The Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="images/the-guild.svg" alt="Guild Symbol" class="logo-width-max">
-                <a class="navbar-brand" href="index.html">
-                    The Guild</a>
+    <div class="scrollable-content">
+        <header>
+            <!-- The Nav Bar Start -->
+            <nav class="navbar border-dark border border-1 border navbar-expand-lg bg-body-tertiary red-bg">
+                <div class="container-fluid">
+                    <img src="images/the-guild.svg" alt="Guild Symbol" class="logo-width-max">
+                    <a class="navbar-brand text-color-white text-shadow-black" href="index.html">
+                        The Guild</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registration.html">Registration</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle white-text" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Products and Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item white-text" href="products.html">Product</a></li>
-                                <li><a class="dropdown-item white-text" href="services.html">Services</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                    <button class="navbar-toggler off-red-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-shadow-black text-color-white" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color-gray text-shadow-black" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color-gray text-shadow-black"
+                                    href="registration.html">Registration</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="custom-nav-link dropdown-toggle text-color-gray text-shadow-black" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products and Services
+                                </a>
+                                <ul class="dropdown-menu red-bg">
+                                    <li><a class="dropdown-item transparent-background text-color-gray text-shadow-black"
+                                            href="products.html">Product</a></li>
+                                    <li><a class="dropdown-item transparent-background text-color-gray text-shadow-black"
+                                            href="services.html">Services</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item transparent-background text-color-gray text-shadow-black"
+                                            href="checkout.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- The Nav Bar End -->
+        </header>
+
+        <main>
+
+            <!-- Carousel Start -->
+            <section>
+                <div id="carousel-container">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/carousel-imgs/carousel-item-1-half.webp" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow-black">Magic Items Galore</h5>
+                                    <p class="text-shadow-black">Our stock of magical items is sure to include what you
+                                        need!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-imgs/carousel-item-2-half.webp" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow-black">Highly Skilled Talent</h5>
+                                    <p class="text-shadow-black">The potential talent and parties you may hire are
+                                        highly
+                                        skilled!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-imgs/carousel-item-3-half.webp" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow-black">No Issue is Unsolvable</h5>
+                                    <p class="text-shadow-black">Our staff are able to effectively plan solutions to
+                                        even
+                                        the most daunting of foes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel End -->
+
+            <!-- Main Body Content Start -->
+            <section>
+                <div id="preamble-container">
+                    <article>
+                        <h1>The Guild: Where Legends Come to Life! </h1>
+                        <p>Welcome to The Guild, the premier hub for all your fantastical needs! Whether you’re a
+                            battle-hardened warrior, a curious mage, or a wide-eyed novice, our mystical emporium caters
+                            to adventurers of every stripe. Step through our virtual portal and immerse yourself in a
+                            world of wonder, danger, and untold treasures.</p>
+                    </article>
+
+                    <figure>
+                        <h4>Our Services</h1>
+                            <ol>
+                                <li>Dragon Slaying: Fearless knights and cunning rogues await your command. Need a
+                                    fire-breathing wyrm vanquished? Look no further! Our seasoned dragon-slayers boast
+                                    impressive résumés, including fabled encounters with the dreaded Crimson Scale and
+                                    the elusive Frostwing.</li>
+                                <li>Princess Rescue: Is your heart set on chivalry? Our gallant rescuers specialize in
+                                    liberating distressed damsels from enchanted towers, cursed forests, and the
+                                    clutches of wicked sorcerers. True love awaits—just a quest away!</li>
+                                <li>Magical Items Galore: From Elixir of Levitation to Sword of Eternal Flame, our
+                                    shelves groan under the weight of mystical artifacts. Seek the perfect trinket to
+                                    enhance your powers, ward off curses, or impress fellow adventurers at the local
+                                    tavern.</li>
+                                <li>Adventurers for Hire: Assemble your dream team! Peruse our adventurer listings:
+                                    brooding rangers, scholarly wizards, nimble bards, and more. Need a bard to compose
+                                    your epic ballad? Or a cleric to heal your battle wounds? We’ve got you covered.
                                 </li>
-                                <li><a class="dropdown-item white-text" href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                            </ol>
+                            <h4>Why Choose The Guild</h1>
+                                <ul>
+                                    <li>Reliability: Our griffon-mounted couriers ensure swift delivery of magical
+                                        scrolls, potions, and enchanted compasses.</li>
+                                    <li>Customer Reviews: Read testimonials from satisfied clients like Sir Galahad, the
+                                        Enchanted Minstrel, and the mysterious Lady Moonshadow.</li>
+                                    <li>Guild Discounts: Guildmasters, unite! Bulk discounts available for parties of
+                                        three or more.</li>
+                                    <li>24/7 Customer Support: Our friendly imps are on standby to address any magical
+                                        mishaps, teleportation blunders, or potion-induced transformations.</li>
+                                </ul>
+                    </figure>
+
+                    <article id="visit-us-container">
+                        <h1>Have Your Problem Solved In A Flash</h4>
+                            <p>The Guild, we can make destiny unfold, ignite legends, and help coin purse jingle. Our
+                                mystical emporium beckons you—a portal to realms uncharted, where magic thrums in the
+                                air and ancient prophecies whisper through enchanted forests.</p>
+
+                            <p>
+                                Step across the threshold, adventurer. Feel the cobbled stones beneath your boots, worn
+                                smooth by countless quests. The scent of dragonfire mingles with the aroma of freshly
+                                baked pastries from the Tavern of Whimsical Delights. Our sign creaks in the breeze, its
+                                letters etched in shimmering silver: “Realm Quest Adventures: Seekers of Adventure,
+                                Fortune, and the Perfect Potion.”</p>
+
+                            <p>Inside, the air hums with possibility. To your left, a grizzled dwarf haggles with a
+                                spectral merchant over a vial of Elixir of Invisibility. To your right, a sorceress
+                                consults her crystal ball, seeking signs of her lost familiar. And there, at the center
+                                of it all, our guildmaster—an ancient sage with eyes like starlight—waits to greet you.
+                            </p>
+                    </article>
                 </div>
+                <div class="m-5"></div>
+            </section>
+            <!-- Main Body Content End -->
+
+        </main>
+
+        <!-- Footer Start -->
+        <footer
+            class="footer mt-auto py-3 bg-body-tertiary red-bg text-color-white-body border-dark border border-1 text-shadow-black">
+            <div class="container">
+                <h6 class="footer-text text">Disclaimer: The Guild is not responsible for accidental polymorphs, cursed
+                    treasure, or unexpected encounters with ancient liches. All adventurers peruse at their own risk.
+                    </h5>
             </div>
-            
-        </nav>
-        <!-- The Nav Bar End -->
-    </header>
-
-    <main>
-        
-        <!-- Carousel Start -->
-        <section>
-            <div id="carousel-container">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/carousel-imgs/carousel-item-1-half.webp" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-shadow-black">Magic Items Galore</h5>
-                                <p class="text-shadow-black">Our stock of magical items is sure to include what you
-                                    need!</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/carousel-imgs/carousel-item-2-half.webp" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-shadow-black">Highly Skilled Talent</h5>
-                                <p class="text-shadow-black">The potential talent and parties you may hire are highly
-                                    skilled!</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/carousel-imgs/carousel-item-3-half.webp" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-shadow-black">No Issue is Unsolvable</h5>
-                                <p class="text-shadow-black">Our staff are able to effectively plan solutions to even
-                                    the most daunting of foes
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- Carousel End -->
-
-        <section>
-            <div id="preamble-container">
-                <article>
-                    <h1>The Guild: Where Legends Come to Life! </h1>
-                    <p>Welcome to The Guild, the premier hub for all your fantastical needs! Whether you’re a battle-hardened warrior, a curious mage, or a wide-eyed novice, our mystical emporium caters to adventurers of every stripe. Step through our virtual portal and immerse yourself in a world of wonder, danger, and untold treasures.</p>
-                </article>
-
-                <figure>
-                    <h4>Our Services</h1>
-                    <ol>
-                        <li>Dragon Slaying: Fearless knights and cunning rogues await your command. Need a fire-breathing wyrm vanquished? Look no further! Our seasoned dragon-slayers boast impressive résumés, including fabled encounters with the dreaded Crimson Scale and the elusive Frostwing.</li>
-                        <li>Princess Rescue: Is your heart set on chivalry? Our gallant rescuers specialize in liberating distressed damsels from enchanted towers, cursed forests, and the clutches of wicked sorcerers. True love awaits—just a quest away!</li>
-                        <li>Magical Items Galore: From Elixir of Levitation to Sword of Eternal Flame, our shelves groan under the weight of mystical artifacts. Seek the perfect trinket to enhance your powers, ward off curses, or impress fellow adventurers at the local tavern.</li>
-                        <li>Adventurers for Hire: Assemble your dream team! Peruse our adventurer listings: brooding rangers, scholarly wizards, nimble bards, and more. Need a bard to compose your epic ballad? Or a cleric to heal your battle wounds? We’ve got you covered.</li>
-                    </ol>
-                    <h4>Why Choose The Guild</h1>
-                    <ul>
-                        <li>Reliability: Our griffon-mounted couriers ensure swift delivery of magical scrolls, potions, and enchanted compasses.</li>
-                        <li>Customer Reviews: Read testimonials from satisfied clients like Sir Galahad, the Enchanted Minstrel, and the mysterious Lady Moonshadow.</li>
-                        <li>Guild Discounts: Guildmasters, unite! Bulk discounts available for parties of three or more.</li>
-                        <li>24/7 Customer Support: Our friendly imps are on standby to address any magical mishaps, teleportation blunders, or potion-induced transformations.</li>
-                    </ul>
-                </figure>
-
-                <article id="visit-us-container">
-                    <h1>Have Your Problem Solved In A Flash</h4>
-                    <p>The Guild, we can make destiny unfold, ignite legends, and help coin purse jingle. Our mystical emporium beckons you—a portal to realms uncharted, where magic thrums in the air and ancient prophecies whisper through enchanted forests.</p>
-
-                    <p>
-                    Step across the threshold, adventurer. Feel the cobbled stones beneath your boots, worn smooth by countless quests. The scent of dragonfire mingles with the aroma of freshly baked pastries from the Tavern of Whimsical Delights. Our sign creaks in the breeze, its letters etched in shimmering silver: “Realm Quest Adventures: Seekers of Adventure, Fortune, and the Perfect Potion.”</p>
-                        
-                    <p>Inside, the air hums with possibility. To your left, a grizzled dwarf haggles with a spectral merchant over a vial of Elixir of Invisibility. To your right, a sorceress consults her crystal ball, seeking signs of her lost familiar. And there, at the center of it all, our guildmaster—an ancient sage with eyes like starlight—waits to greet you.</p>
-                </article>
-            </div>
-            <div class="m-5"></div>
-        </section>
-
-
-    </main>
-
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container">
-          <h6 class="footer-text">Disclaimer: The Guild is not responsible for accidental polymorphs, cursed treasure, or unexpected encounters with ancient liches. All adventurers peruse at their own risk.</h5>    </div>
-      </footer>
+        </footer>
+        <!-- Footer End -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

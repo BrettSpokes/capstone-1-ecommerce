@@ -41,6 +41,12 @@ section {
     filter: brightness(.9);
 }
 
+.off-white-bg-nofilter{
+    background-color: antiquewhite;
+    background-image: url("/images/background.webp") ;
+    border-color: #000;
+}
+
 .off-white-bg:checked{
     background-image: url("/images/background-red.webp");
     filter: brightness(.5);
@@ -110,6 +116,21 @@ select option {
     color: rgb(194,185,176) !important;
 }
 
+.text-color-gray:visited{
+    color: rgb(194,185,176) !important;
+}
+
+.custom-nav-link{
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
 
 .no-text-decoration{
     text-decoration: none;
@@ -150,6 +171,18 @@ select option {
     background-color: darkred;
     border: red;
 }
+
+
+.redeem-button {
+    background-color: brown;
+    border: red;
+    padding-bottom: 10px;
+}
+
+.redeem-button:hover {
+    background-color: darkred;
+}
+
 
 #carousel-container {
     margin-left: 0%;

@@ -108,13 +108,39 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <label for="inputPassword4" class="form-label">Password</label>
           <div class="input-group has-validation">
             <input type="password" class="form-control rounded off-white-bg" id="inputPassword4" placeholder="Set Password"
                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" autocomplete="current-password" required>
             <div class="invalid-feedback">
               Please set a password. Minimum eight characters, at least one letter and one number.
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="inputPassword5" class="form-label">Password Confirmation</label>
+          <div class="input-group has-validation">
+            <input type="password" class="form-control rounded off-white-bg" id="inputPassword5" placeholder="Set Password"
+               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" autocomplete="current-password" required>
+            <div class="invalid-feedback">
+              Make sure your passwords match.
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomEmail" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <input type="email" class="form-control rounded off-white-bg" id="validationCustomEmail" placeholder="Enter Email"
+               pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" autocomplete="email" required>
+            <div class="invalid-feedback">
+              Please enter a valid email.
             </div>
             <div class="valid-feedback">
               Looks good!
@@ -195,7 +221,7 @@
           <button class="btn btn-primary add-cart-button" type="submit">Register</button>
         </div>
 
-        <div class="m-4"></div>
+        <div class="m-5"></div>
       </form>
 
     </div>
